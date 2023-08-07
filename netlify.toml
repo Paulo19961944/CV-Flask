@@ -1,0 +1,6 @@
+[build]
+  command = "python app.py"
+  publish = "_site"  # Pasta de saída do Flask (pode ser outra pasta dependendo da sua configuração)
+
+[build.environment]
+  FLASK_ENV = "production"
