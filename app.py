@@ -10,5 +10,5 @@ def index():
     idade = hoje.year - data_nascimento.year - ((hoje.month, hoje.day) < (data_nascimento.month, data_nascimento.day))
     return render_template('index.html', idade=idade)
 
-if __name__ == '__main__':
-    app.run()
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=80)
